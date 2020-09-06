@@ -4,9 +4,9 @@ import './App.css';
 
 import Header from'./Header.js';
 import MainFeaturedPost from './MainFeaturedPost.js';
-import Main from './Main';
-import Sidebar from './Sidebar.js';
-import FeaturedPost from './FeaturedPost';
+//import Main from './Main';
+//import Sidebar from './Sidebar.js';
+//import FeaturedPost from './FeaturedPost';
 import Footer from './Footer.js';
 
 
