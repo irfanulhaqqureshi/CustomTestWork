@@ -65,7 +65,7 @@ export default function Header(props) {
   const classes = useStyles();
   const { sections, title } = props;
   const [isMobile, setIsMobile] = useState(window.innerWidth<480);
-  setIsMobile=null;
+  setIsMobile(window.innerWidth<480);
   const [toolbarMenuVisibility, setToolbarMenuVisibility]= useState(false);
   const handleManuClose = () => {
     setToolbarMenuVisibility(false);
