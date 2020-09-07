@@ -64,8 +64,7 @@ const useStyles = makeStyles((theme) => ({
 export default function Header(props) {
   const classes = useStyles();
   const { sections, title } = props;
-  let [isMobile, setIsMobile] = useState(window.innerWidth<480);
-  setIsMobile=null;
+  let isMobile=useState(window.innerWidth<480)[0];
   const [toolbarMenuVisibility, setToolbarMenuVisibility]= useState(false);
   const handleManuClose = () => {
     setToolbarMenuVisibility(false);
