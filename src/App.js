@@ -21,17 +21,7 @@ function App() {
         description:'Multiple lines of text that form the lede, informing new readers quickly and efficiently about whats most interesting in this posts contents.',
         linkText:'Continue Reading',
         }}/>
-        {/*<Main title='From the firehose' posts={['post1', 'post2']}/>*/}
-        {/*<Sidebar
-        archives={[
-          {title:'March 2020'}, {title:'June 2020'}
-        ]}
-        description={'The description'}
-        social={['facebook_icon']}
-        title='The title for Archives'
-      />*/}
-        {/*<FeaturedPost post={{title:'Featured Post', date:'22 May', description:'Short description of post'}}/>*/}
-        <Footer description={'Description for the footer'} title={'Footer Title'}/>
+      <Footer description={'Description for the footer'} title={'Footer Title'}/>
     </div>
   );
 }
