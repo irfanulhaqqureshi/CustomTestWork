@@ -65,11 +65,12 @@ export default function Header(props) {
   const classes = useStyles();
   const { sections, title } = props;
   const [isMobile, setIsMobile] = useState(window.innerWidth<480);
+  setIsMobile=null;
   const [toolbarMenuVisibility, setToolbarMenuVisibility]= useState(false);
   const handleManuClose = () => {
     setToolbarMenuVisibility(false);
   }
-  const handleManuClick = () => {
+  const handleManuItemClick = () => {
     setToolbarMenuVisibility(false);
   }
   return (
@@ -111,9 +112,7 @@ export default function Header(props) {
         > 
         {sections.map((section)=>(
           <StyledMenuItem
-          onClick={()=>{
-            setToolbarMenuVisibility(false);
-          }}
+          onClick={handleManuItemClick}
           >
           <ListItemText primary={section.title}/>
         </StyledMenuItem>
